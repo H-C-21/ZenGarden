@@ -1,0 +1,326 @@
+body{
+    margin: 0;
+    
+    background-color: rgba(22, 28, 36, 1);;
+    /* background-color: rgb(32, 30, 30); */
+    /* columns; */
+    color: white;
+    
+}
+
+.head-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: #010101;
+
+    /* background-color: blueviolet;
+     */
+
+     /* background: linear-gradient(to right, #ffcccc, #ff9999); */
+}
+
+a{
+    cursor: pointer;
+}
+
+.head-container h1 {
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    /* color: #fff; */
+    margin-left: 24px;
+    cursor: pointer;
+    /* margin-top: 1rem; */
+    color: black;
+    margin-top: 2rem;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+.head-container h1:hover {
+    transform: scale(1.1); /* Enlarge to 110% of its original size on hover */
+  }
+
+.head-container h1{
+    /* height: 80px; */
+    /* background-color: blue; */
+    position: relative;
+    left: -660px; /* Initially position the div outside the left edge of the screen */
+    animation: slideIn 1s forwards; /* Change duration as needed */
+    background: linear-gradient(to left, white, rgba(9, 8, 8, 0.876));
+  
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      left: -660px; /* Start position outside the left edge */
+    }
+    100% {
+      left: 0; /* End position at the left edge */
+    }
+  }
+
+.head-container a{
+    /* justify-self:end; */
+    align-self: center;
+    margin-left: auto;
+    color: white;
+    font-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    animation: slideFromTop 1s forwards;
+    /* Optionally adjust other styles like position, right, top, etc. */
+    position: relative;
+    top: -100%; /* Start off-screen */
+  }
+  
+  @keyframes slideFromTop {
+    from {
+      top: -100%; /* Start off-screen */
+    }
+    to {
+      top: 0; /* Slide in to the right */
+    }
+  }
+
+.head-container a:last-child {
+    /* Styles for the last <p> element inside .parent */
+    /* color: red; */
+
+    margin-right: 5rem;
+  }
+
+
+.award{
+    padding: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 40vw;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+.award h4{
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.award-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.award table{
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.award th {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.893), #FFD700);
+  
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.award table tr th:first-child{
+    text-align: end;
+    padding-right: 4px;
+}
+
+.award table tr th:last-child{
+    text-align: start;
+    padding-left: 4px;
+}
+
+.award tbody tr:first-child{
+    /* background-color: #010101; */
+    color: white;
+    font-size: 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+    td{
+        text-align: center;
+
+        
+    }
+
+    .award td{
+        font-size: 2rem;
+        width: 9rem;
+
+        
+    }
+
+.about{
+    height: 60vh;
+    /* width: 100%; */
+    padding: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    width: 62vw;
+    color: rgb(179, 179, 179);
+    margin-left: 1rem;
+    animation: slideFromRight 1s forwards;
+    /* Optionally adjust other styles like position, right, top, etc. */
+    position: relative;
+    right: -100%; /* Start off-screen */
+}
+
+@keyframes slideFromRight {
+    from {
+      right: -100%; /* Start off-screen */
+    }
+    to {
+      right: 0; /* Slide in to the right */
+    }
+  }
+
+.about h1{
+    font-size: 2.4rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about div div p:first-child{
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0.5rem;
+
+}
+
+blockquote{
+    text-align: center;
+    font-size: larger;
+
+}
+
+#event{
+    height: 60vh;
+    /* width: 100%; */
+    padding: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    /* width: 33vw; */
+    color: rgb(179, 179, 179);
+    margin-left: 1rem;
+}
+
+#event h4{
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#event table {
+    border-collapse: collapse; /* Ensure cell borders are collapsed */
+    width: 100%; /* Adjust width as needed */
+  }
+  
+ #event table th, #event table td {
+    border: 2px solid #ffffff; /* Set border style and color */
+    padding: 8px; /* Add padding for content */
+  }
+
+  #videos{
+    padding: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    /* width: 33vw; */
+    color: rgb(179, 179, 179);
+    margin-left: 1rem;
+  }
+
+  #videos .h2{
+    font-size: 2.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+
+  .video-container1{
+    display: flex;
+    justify-content: center;
+    /* padding: 1rem; */
+    height: 50vh;
+  }
+
+#images {
+    overflow: hidden;
+  }
+  
+  .image-container {
+    display: flex;
+    transition: transform 20S infinite ease-in;
+  }
+  
+ .image-container img {
+    max-width: 98%;
+    height: auto;
+    max-height: 60vh;
+  }
+  
+  /* Use keyframes to create a sliding effect */
+  @keyframes slide {
+    0% {
+        transform: translateX(0);
+      }
+      20% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-100%);
+      }
+      45% {
+        transform: translateX(-100%);
+      }
+      50% {
+        transform: translateX(-125%);
+      }
+
+      65% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+  }
+  
+  /* Apply the animation to the slides */
+  .image-container {
+    animation: slide 5s infinite alternate; /* Change timing as needed */
+    display: flex;
+  }
+
+  ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; /* Adjust column width as needed */
+    /* Optional styling */
+    list-style: none; /* Removes default list bullets */
+    gap: 2px; 
+    margin-top: 2rem;
+    /* padding: 4rem; */
+  }
+
+  footer p{
+    text-align: end;
+  }
+
+  footer ul :first-child{
+    text-align: start;
+    margin-left: 2rem;
+  }
+
+  footer ul a{
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+  }
